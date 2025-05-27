@@ -131,3 +131,5 @@ docker run \
 7. **DESeq2: Moderated estimation of fold change and dispersion**  
    Love, M. I., Huber, W., & Anders, S. (2014). *Genome Biology*, 15(12), 550.  
    DOI: [10.1186/s13059-014-0550-8](https://doi.org/10.1186/s13059-014-0550-8)
+
+8. Nick Laurenz Kaiser, Martin H Groschup, Balal Sadeghi, VirDetector: a bioinformatic pipeline for virus surveillance using nanopore sequencing, Bioinformatics, Volume 41, Issue 2, February 2025, btaf029, https://doi.org/10.1093/bioinformatics/btaf029
