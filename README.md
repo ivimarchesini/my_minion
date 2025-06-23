@@ -101,8 +101,7 @@ docker run \
 
 ### 📖 Basecalling with RAMSES – University of Cologne
 
-Basecalling is the process of converting raw signal data from a sequencing instrument (e.g., Oxford Nanopore) into nucleotide sequences (FASTQ/FASTA format). At the University of Cologne (Uni Köln), **RAMSES** is used to facilitate this step in a standardized and reproducible way.This guide outlines how to perform basecalling using the RAMSES environment at Uni Köln.
-
+At the University of Cologne (Uni Köln), **RAMSES** environment is used to facilitate this step in a standardized and reproducible way.
 
 
 
