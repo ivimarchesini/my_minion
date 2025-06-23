@@ -99,6 +99,10 @@ docker run \
 
 ## Perform basecalling
 
+### 📖 Basecalling with RAMSES – University of Cologne
+
+Basecalling is the process of converting raw signal data from a sequencing instrument (e.g., Oxford Nanopore) into nucleotide sequences (FASTQ/FASTA format). At the University of Cologne (Uni Köln), **RAMSES** is used to facilitate this step in a standardized and reproducible way.This guide outlines how to perform basecalling using the RAMSES environment at Uni Köln.
+
 
 
 
@@ -133,3 +137,5 @@ docker run \
    DOI: [10.1186/s13059-014-0550-8](https://doi.org/10.1186/s13059-014-0550-8)
 
 8. Nick Laurenz Kaiser, Martin H Groschup, Balal Sadeghi, VirDetector: a bioinformatic pipeline for virus surveillance using nanopore sequencing, Bioinformatics, Volume 41, Issue 2, February 2025, btaf029, https://doi.org/10.1093/bioinformatics/btaf029
+
+9. https://gitlab.git.nrw/uzk-itcc-hpc/itcc-hpc-ramses/-/wikis/Documentation#22-ssh-access-keys-and-things
