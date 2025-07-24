@@ -104,6 +104,23 @@ docker run \
 At the University of Cologne (Uni Köln), **RAMSES** environment is used to facilitate this step in a standardized and reproducible way.
 
 
+Notes
+Minion--> POD5 model Sup--->
+KIT:SQK-NBD114.24 barcoding KIT
+aligment Minimap2 (bwa, short reads?)
+
+FASTQC? Trimmomatic, Cutadapt?
+
+BamToFreq Q>9
+
+Powershell
+winget (para preguntar si esta instalado)
+winget install_ _id git.git
+
+Git Bash --> terminal para poner el comando:
+ssh-keygen-t ed25519-C "YOUR NAME>"
+Enter passphrase: 
+Transfer the public key cisco duo
 
 ---
 ### 📚 References
