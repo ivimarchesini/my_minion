@@ -100,8 +100,8 @@ docker run \
 ## 🎛️ Perform Basecalling
 
 ### 📖 Basecalling with RAMSES – University of Cologne
-At the University of Cologne (Uni Köln), **RAMSES** environment is used to facilitate this step in a standardized and reproducible way.
-At the **University of Cologne (Universität zu Köln)**, basecalling of Nanopore data is typically performed using the **RAMSES** environment. RAMSES is a standardized and reproducible computing environment designed for molecular data processing.
+
+At the **University of Cologne (Universität zu Köln)**, basecalling of Nanopore data is typically performed using the **RAMSES** environment. RAMSES provides a standardized and reproducible computing environment for molecular data processing.
 
 ---
 
@@ -109,32 +109,44 @@ At the **University of Cologne (Universität zu Köln)**, basecalling of Nanopor
 
 #### 1. ✅ Requirements
 
-Before proceeding, ensure you have:
+Before proceeding, make sure you have:
 
-- A Uni Köln user account with access to RAMSES
-- Your device hostname (e.g., `mc-111414`)
-- SSH access enabled on your Windows system
+- A University of Cologne (Uni Köln) user account with RAMSES access
+- Your assigned remote device hostname (e.g., `10.212.1.44`)
+- SSH access enabled on your Windows system (PowerShell or CMD)
 - Fast5 files generated from MinKNOW (raw Nanopore output)
 
 ---
 
-#### 2. 🔐 Open a Terminal and Connect via SSH
+#### 2. 🔐 Connect via SSH
 
-Open the **PowerShell** (`cmd.exe`) and enter the following:
+Open **PowerShell** (or any terminal with SSH support) and enter the following:
 
 ```bash
-ssh minit@<hostname>
-ℹ️ Replace <hostname> with the server assigned to your project or lab. 
+ssh <username>@<hostname>
+```
 
-For Example:
+ℹ️ Replace <hostname> with the server assigned to your project or lab. For Example:
+
+```bash
 ssh minit@10.212.1.44
-Passwort: minit
-
+minit
+```
 Enter the password to establish an SSH connection. The default password is minit. Please note that characters will not appear on-screen as you type in the password.
 If you have a user: imarches@10.212.1.44
 If it is your first time connecting, you will be asked to confirm the authenticity of the host. Enter yes to continue.
 If the SSH connection is successfully established, the shell prompt will now read: minit@hostname:~$
 
+For Example:
+
+```bash
+ssh imarches@10.212.1.44
+```
+To exit :
+
+```bash
+exit
+```
 ---
 
 #### 3. 🧬Navigate to Your Data Directory
@@ -146,13 +158,9 @@ Check the content:
 
 ```bash
 ls
-
-
-
+```
 ---
 
-
-Once connected, navigate to the directory where your Fast5 files are stored:
 
 Notes
 Minion--> POD5 model Sup--->
