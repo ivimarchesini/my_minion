@@ -159,11 +159,8 @@ Check the content:
 ```bash
 ls
 ```
-
 ---
 
-
-Once connected, navigate to the directory where your Fast5 files are stored:
 
 Notes
 Minion--> POD5 model Sup--->
