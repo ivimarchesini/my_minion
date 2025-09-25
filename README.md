@@ -161,6 +161,65 @@ ls
 ```
 ---
 
+### 4. Login to Ramses 
+My SSH private key file (id_ed25519) has permissions that are too open, so SSH is refusing to use it. This is a common issue on Windows, and it's easy to fix=
+
+PowerShell 7.5.3
+PS C:\Users\Viro_User> icacls "$HOME\.ssh\id_ed25519" /inheritance:r
+Bearbeitete Datei: C:\Users\Viro_User\.ssh\id_ed25519
+1 Dateien erfolgreich verarbeitet, bei 0 Dateien ist ein Verarbeitungsfehler aufgetreten.
+
+
+PS C:\Users\Viro_User> icacls C:\Users\Viro_User\.ssh\id_ed25519 /grant:r Viro_User:F
+Bearbeitete Datei: C:\Users\Viro_User\.ssh\id_ed25519
+1 Dateien erfolgreich verarbeitet, bei 0 Dateien ist ein Verarbeitungsfehler aufgetreten.
+
+Access To Ramses
+```bash
+PS C:\Users\Viro_User> ssh imarches@ramses4.itcc.uni-koeln.de
+Enter passphrase for key 'C:\Users\Viro_User/.ssh/id_ed25519':
+(imarches@ramses4.itcc.uni-koeln.de) Duo two-factor login for imarches
+Enter a passcode or select one of the following options:
+ 1. Duo Push to +XX XXX XXX9171
+Passcode or option (1-1): 335067
+Success. Logging you in...
+Success. Logging you in...
+[imarches@ramses4 ~]$
+```
+```bash
+pwd       # show current directory
+ls        # list files and folders
+```
+
+Create a project directory
+mkdir project1
+cd project1
+
+to enter 
+[imarches@ramses4 ~]$ cd /projects/virology
+[imarches@ramses4 virology]$ ls -lh
+[imarches@ramses4 virology]$ /home/<user>
+---> user is virology
+[imarches@ramses4 virology]$ /home/<virology>
+-bash: syntax error near unexpected token `newline'
+[imarches@ramses4 virology]$ ls
+bamToFreq      genes_BKV_NCCR.csv   genes_TTV.csv  ref_BKV.fasta       ref_BKV_NCCR.fasta.fai  ref_TTV.fasta
+dorado         genes_BKV_NCCR.csv~  nanopore       ref_BKV.fasta.fai   ref_HIV.fasta           ref_TTV.fasta.fai
+genes_BKV.csv  genes_HIV.csv        ngs.fasta      ref_BKV_NCCR.fasta  ref_HIV.fasta.fai
+[imarches@ramses4 virology]$
+
+cd:
+“Change my current location to the folder named nanopore inside my current directory.”
+
+cd ..
+Goes up one level (to the parent directory).
+cd /projects/virology/nanopore
+Goes directly to that exact folder, regardless of where you currently are.
+cd ~
+Goes to your home directory (/home/imarches).
+Just typing cd alone:
+Also takes you to your home directory.
+
 
 Notes
 Minion--> POD5 model Sup--->
@@ -179,6 +238,7 @@ Git Bash --> terminal para poner el comando:
 ssh-keygen-t ed25519-C "YOUR NAME>"
 Enter passphrase: 
 Transfer the public key cisco duo
+
 
 ---
 ### 📚 References
